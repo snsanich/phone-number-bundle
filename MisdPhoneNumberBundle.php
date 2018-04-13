@@ -12,7 +12,6 @@
 namespace Misd\PhoneNumberBundle;
 
 use Misd\PhoneNumberBundle\DependencyInjection\Compiler\FormPhpTemplateCompilerPass;
-use Misd\PhoneNumberBundle\DependencyInjection\Compiler\FormTwigTemplateCompilerPass;
 use Misd\PhoneNumberBundle\DependencyInjection\Compiler\ParentLocalesCompilerPass;
 use Symfony\Component\DependencyInjection\Compiler\PassConfig;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -35,6 +34,5 @@ class MisdPhoneNumberBundle extends Bundle
           PassConfig::TYPE_BEFORE_REMOVING
         );
         $container->addCompilerPass(new FormPhpTemplateCompilerPass());
-        $container->addCompilerPass(new FormTwigTemplateCompilerPass());
     }
 }

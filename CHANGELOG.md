@@ -1,6 +1,13 @@
 Changelog
 =========
 
+2.0.1
+-----
+
+Removed dependency from templating system
+
+* Drop dependency from twig template in bundle
+
 2.0.x-dev
 -----
 
