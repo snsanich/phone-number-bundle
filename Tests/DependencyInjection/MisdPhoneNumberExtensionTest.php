@@ -62,22 +62,6 @@ class MisdPhoneNumberExtensionTest extends TestCase
               'libphonenumber\PhoneNumberToTimeZonesMapper'
             );
         }
-        $this->assertHasService(
-          'misd_phone_number.templating.helper',
-          'Misd\PhoneNumberBundle\Templating\Helper\PhoneNumberHelper'
-        );
-        $this->assertServiceHasTag(
-          'misd_phone_number.templating.helper',
-          'templating.helper',
-          array('alias' => 'phone_number_helper')
-        );
-
-        // Assert deprecated 'phone_number_format' alias
-        $this->assertServiceHasTag(
-            'misd_phone_number.templating.helper',
-            'templating.helper',
-            array('alias' => 'phone_number_format')
-        );
 
         $this->assertHasService(
           'misd_phone_number.form.type',
